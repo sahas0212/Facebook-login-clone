@@ -8,7 +8,7 @@ A pixel-accurate, front-end clone of the Facebook login experience, built with p
 
 ## 🔗 Live Demo
 
-👉 **[View Live on GitHub Pages](https://your-username.github.io/facebook-clone/)**
+👉 **[View Live on GitHub Pages](https://sahas0212.github.io/Facebook-login-clone/)**
 
 ---
 
@@ -100,4 +100,4 @@ This project is built for **educational purposes only** as a front-end developme
 ## 👤 Author
 
 **Sahas** — Computer Science & Engineering, GPREC  
-[GitHub](https://github.com/your-username) · [LinkedIn](https://linkedin.com/in/your-profile)
+[GitHub](https://github.com/sahas0212) · [LinkedIn](https://www.linkedin.com/in/s-sahas-reddy-704b80297/)
