@@ -1,0 +1,489 @@
+/* =====================
+   GLOBAL RESET & BASE
+   ===================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #1877f2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   HEADER
+   ===================== */
+
+.fb-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.header-logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1877f2;
+}
+
+/* CENTER SECTION */
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* SEARCH BOX */
+.header-search-wrap {
+  display: flex;
+  align-items: center;
+  background: #f0f2f5;
+  padding: 6px 12px;
+  border-radius: 20px;
+  width: 250px;
+}
+
+.header-search-wrap span {
+  margin-right: 8px;
+  font-size: 14px;
+  color: #606770;
+}
+
+.header-search-wrap input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* ICONS */
+.header-icons {
+  display: flex;
+  gap: 25px; /* spacing between icons */
+}
+
+.header-icons a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.header-icons a:hover {
+  background: #f0f2f5;
+}
+
+/* RIGHT ACTIONS */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-actions button {
+  border: none;
+  background: #e4e6eb;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.header-actions button:hover {
+  background: #d8dadf;
+}
+
+.avatar {
+  background: #1877f2;
+  color: white;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* =====================
+   MAIN TWO-COLUMN LAYOUT
+   ===================== */
+
+.main-layout {
+    flex: 1;
+    max-width: 980px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* LEFT PANEL */
+.left-panel {
+    flex: 1;
+    min-width: 0;
+}
+
+.fb-logo-big {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+    color: #1877f2;
+    margin-bottom: 16px;
+}
+
+.hero-text {
+    font-size: 24px;
+    line-height: 1.4;
+    color: #1c1e21;
+    max-width: 380px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    flex-shrink: 0;
+    width: 396px;
+}
+
+/* =====================
+   LOGIN CARD
+   ===================== */
+
+.login-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1c1e21;
+    margin-bottom: 4px;
+}
+
+.card-subtitle {
+    font-size: 15px;
+    color: #65676b;
+    margin-bottom: 12px;
+}
+
+.divider-top {
+    border: none;
+    border-top: 1px solid #dadde1;
+    margin: 12px 0 16px;
+}
+
+/* =====================
+   FORM ELEMENTS
+   ===================== */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    background-color: #ffffff;
+    margin-top: 12px;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:first-child,
+input[type="email"]:first-child {
+    margin-top: 0;
+}
+
+input:focus {
+    border-color: #1877f2;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    transform: scale(1.2);
+    margin-top: 0;
+}
+
+/* =====================
+   BUTTONS
+   ===================== */
+
+.btn-login {
+    margin-top: 16px;
+    width: 100%;
+    padding: 14px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+}
+
+.btn-login:hover {
+    background-color: #166fe5;
+}
+
+.btn-green {
+    background-color: #42b72a;
+    font-size: 17px;
+}
+
+.btn-green:hover {
+    background-color: #36a420;
+}
+
+.btn-create {
+    display: inline-block;
+    padding: 14px 20px;
+    background-color: #42b72a;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.15s;
+}
+
+.btn-create:hover {
+    background-color: #36a420;
+    text-decoration: none;
+}
+
+.btn-cancel {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e4e6eb;
+    color: #1c1e21;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.15s;
+}
+
+.btn-cancel:hover {
+    background-color: #d8dadf;
+    text-decoration: none;
+}
+
+.btn-search {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+/* =====================
+   MISC CARD ELEMENTS
+   ===================== */
+
+.forgot-link {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 14px;
+    color: #1877f2;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #dadde1;
+    margin: 20px 0;
+}
+
+.create-account-wrap {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.create-page-text {
+    text-align: center;
+    font-size: 13px;
+    color: #1c1e21;
+    margin-top: 16px;
+}
+
+.login-link-text {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #65676b;
+}
+
+/* =====================
+   NAME ROW (signup)
+   ===================== */
+
+.name-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.name-row div {
+    flex: 1;
+}
+
+.name-row input {
+    margin-top: 0;
+}
+
+/* =====================
+   TERMS ROW (signup)
+   ===================== */
+
+.terms {
+    margin-top: 12px;
+}
+
+.terms-conditions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #65676b;
+    cursor: pointer;
+}
+
+/* =====================
+   FORGOT PAGE ACTIONS
+   ===================== */
+
+.forgot-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #dadde1;
+}
+
+/* =====================
+   ERROR MESSAGES
+   ===================== */
+
+.error-msg {
+    display: block;
+    color: #fa3e3e;
+    font-size: 12px;
+    margin-top: 4px;
+    min-height: 16px;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+
+.fb-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #dadde1;
+    padding: 16px 24px 24px;
+}
+
+.footer-links {
+    max-width: 980px;
+    margin: 0 auto 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+}
+
+.footer-links a {
+    font-size: 12px;
+    color: #65676b;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    max-width: 980px;
+    margin: 12px auto 0;
+    font-size: 12px;
+    color: #8a8d91;
+    text-align: left;
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+        padding: 30px 16px;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .left-panel {
+        text-align: center;
+    }
+
+    .fb-logo-big {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .right-panel {
+        width: 100%;
+        max-width: 396px;
+    }
+
+    .header-center {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .name-row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="fb-header">
+      <div class="header-inner">
+        <span class="header-logo">facebook</span>
+        <div class="header-center">
+          <div class="header-search-wrap">
+            <span>🔍</span>
+            <input type="text" placeholder="Search Facebook">
+          </div>
+          <nav class="header-icons">
+            <a href="#">🏠</a>
+            <a href="#">🎬</a>
+            <a href="#">🛒</a>
+          </nav>
+        </div>
+        <div class="header-actions">
+          <button>☰</button>
+          <button>💬</button>
+          <button>🔔</button>
+          <div class="avatar">S</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-layout">
+        <div class="left-panel">
+            <h1 class="fb-logo-big">facebook</h1>
+            <p class="hero-text">It's quick and easy to join. Connect with friends and the world around you.</p>
+        </div>
+
+        <div class="right-panel">
+            <div class="login-card">
+                <h2 class="card-title">Create a new account</h2>
+                <p class="card-subtitle">It's quick and easy.</p>
+                <hr class="divider-top">
+
+                <form onsubmit="handleSignup(event)">
+                    <div class="name-row">
+                        <div>
+                            <input type="text" id="firstname" placeholder="First name">
+                            <span class="error-msg" id="firstname-error"></span>
+                        </div>
+                        <div>
+                            <input type="text" id="lastname" placeholder="Last name">
+                            <span class="error-msg" id="lastname-error"></span>
+                        </div>
+                    </div>
+
+                    <input type="text" id="signup-email" placeholder="Mobile number or email address">
+                    <span class="error-msg" id="signup-email-error"></span>
+
+                    <input type="password" id="signup-password" placeholder="New password">
+                    <span class="error-msg" id="signup-password-error"></span>
+
+                    <input type="password" id="confirm-password" placeholder="Confirm password">
+                    <span class="error-msg" id="confirm-password-error"></span>
+
+                    <div class="terms">
+                        <label class="terms-conditions">
+                            <input type="checkbox" id="terms-check">
+                            I agree to the <a href="#">Terms and Conditions</a>
+                        </label>
+                        <span class="error-msg" id="terms-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn-login btn-green">Sign Up</button>
+
+                    <p class="login-link-text">Already have an account? <a href="login.html">Log In</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fb-footer">
+        <div class="footer-links">
+            <a href="#">Sign Up</a>
+            <a href="#">Log In</a>
+            <a href="#">Messenger</a>
+            <a href="#">Facebook Lite</a>
+            <a href="#">Video</a>
+            <a href="#">Places</a>
+            <a href="#">Games</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Meta Pay</a>
+            <a href="#">Meta Store</a>
+            <a href="#">Meta Quest</a>
+            <a href="#">Instagram</a>
+            <a href="#">Threads</a>
+            <a href="#">Fundraisers</a>
+            <a href="#">Services</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Privacy Centre</a>
+            <a href="#">Groups</a>
+            <a href="#">About</a>
+            <a href="#">Create ad</a>
+            <a href="#">Create Page</a>
+            <a href="#">Developers</a>
+            <a href="#">Careers</a>
+            <a href="#">Cookies</a>
+            <a href="#">Ad choices</a>
+            <a href="#">Terms</a>
+            <a href="#">Help</a>
+        </div>
+        <p class="footer-copy">Meta © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
