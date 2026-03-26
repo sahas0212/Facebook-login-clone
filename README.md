@@ -8,7 +8,7 @@ A pixel-accurate, front-end clone of the Facebook login experience, built with p
 
 ## 🔗 Live Demo
 
-👉 **[View Live on GitHub Pages](https://sahas0212.github.io/Facebook-login-clone/)**
+👉 **[View Live on GitHub Pages](https://fb-loginclone272.netlify.app/)**
 
 ---
 
